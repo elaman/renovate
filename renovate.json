@@ -1,5 +1,20 @@
 {
+  "$schema": "https://docs.renovatebot.com/renovate-schema.json",
   "extends": [
-    "config:recommended"
+    "config:recommended",
+    ":disableRateLimiting",
+    ":maintainLockFilesWeekly",
+    ":dependencyDashboard"
+  ],
+  "enabledManagers": ["composer"],
+  "packageRules": [
+    {
+      "matchUpdateTypes": ["minor", "patch"],
+      "enabled": false
+    },
+    {
+      "matchUpdateTypes": ["major"],
+      "schedule": ["every 3 months on the first day of the month"]
+    }
   ]
 }
