@@ -6114,10 +6114,6 @@
             ],
             "authors": [
                 {
-                    "name": "heine",
-                    "homepage": "https://www.drupal.org/user/17943"
-                },
-                {
                     "name": "nerdstein",
                     "homepage": "https://www.drupal.org/user/1557710"
                 },
@@ -21105,5 +21101,5 @@
     "platform-overrides": {
         "php": "8.3"
     },
-    "plugin-api-version": "2.6.0"
+    "plugin-api-version": "2.9.0"
 }
