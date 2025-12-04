@@ -22,7 +22,7 @@
       "groupName": "major",
       "commitMessageAction": "[Renovate] Quarterly major version updates",
       "matchUpdateTypes": ["major"],
-      "schedule": ["every 3 months on the first day of the month"]
+      "schedule": ["at any time"]
     },
     {
       "commitMessageAction": "[Renovate] Disabled minor version updates (in favor of lock file maintenance)",
