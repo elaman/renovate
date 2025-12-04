@@ -12,14 +12,12 @@
     {
       "groupName": "Weekly lock file maintenance.",
       "matchUpdateTypes": ["lockFileMaintenance"],
-      "schedule": ["at any time"],
-      "branchName": "renovate-lock"
+      "schedule": ["at any time"]
     },
     {
       "groupName": "Quarterly major updates.",
       "matchUpdateTypes": ["major"],
-      "schedule": ["every 3 months on the first day of the month"],
-      "branchName": "renovate-major-php"
+      "schedule": ["every 3 months on the first day of the month"]
     },
     {
       "groupName": "Skipped minor and patch updates (in favor of lock file maintenance).",
