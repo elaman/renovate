@@ -5,7 +5,9 @@
     ":maintainLockFilesWeekly"
   ],
   "includePaths": [
+    "drupal/composer.json",
     "drupal/composer.lock",
+    "wordpress/composer.json",
     "wordpress/composer.lock"
   ],
   "lockFileMaintenance": {
