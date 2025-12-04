@@ -20,7 +20,7 @@
     {
       "groupName": "major",
       "commitMessageAction": "[Renovate] Quarterly software updates",
-      "commitMessageTopic": "",
+      "commitMessageExtra": "",
       "matchUpdateTypes": ["major"],
       "schedule": ["every 3 months on the first day of the month"]
     },
