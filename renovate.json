@@ -9,7 +9,8 @@
     "wordpress/composer.@(json|lock)"
   ],
   "lockFileMaintenance": {
-    "branchTopic": "renovate-lock"
+    "branchTopic": "renovate-lock",
+    "schedule": ["at any time"]
   },
   "packageRules": [
     {
