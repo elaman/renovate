@@ -2,7 +2,8 @@
   "$schema": "https://docs.renovatebot.com/renovate-schema.json",
   "extends": [
     "config:recommended",
-    ":maintainLockFilesWeekly"
+    ":maintainLockFilesWeekly",
+    ":disableRateLimiting"
   ],
   "includePaths": [
     "drupal/composer.@(json|lock)",
@@ -18,7 +19,7 @@
       "automerge": true
     },
     {
-      "groupName": "major",
+      "groupName": "php",
       "commitMessageAction": "[Renovate] Quarterly software updates",
       "commitMessageExtra": "",
       "matchUpdateTypes": ["major"],
