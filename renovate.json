@@ -23,7 +23,7 @@
       "commitMessageAction": "[Renovate] Quarterly software updates",
       "commitMessageExtra": "",
       "matchUpdateTypes": ["major"],
-      "schedule": ["every 3 months on the first day of the month"]
+      "schedule": ["any time"]
     },
     {
       "commitMessageAction": "[Renovate] Disabled minor version updates (in favor of lock file maintenance)",
