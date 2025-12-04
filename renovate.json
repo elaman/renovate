@@ -15,7 +15,8 @@
       "groupName": "lock",
       "commitMessageAction": "[Renovate] Weekly lock file maintenance",
       "matchUpdateTypes": ["lockFileMaintenance"],
-      "schedule": ["at any time"]
+      "schedule": ["at any time"],
+      "automerge": true
     },
     {
       "groupName": "major",
