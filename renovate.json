@@ -5,10 +5,8 @@
     ":maintainLockFilesWeekly"
   ],
   "includePaths": [
-    "drupal/composer.json",
-    "drupal/composer.lock",
-    "wordpress/composer.json",
-    "wordpress/composer.lock"
+    "drupal/composer.@(json|lock)",
+    "wordpress/composer.@(json|lock)"
   ],
   "lockFileMaintenance": {
     "branchTopic": "renovate-lock"
