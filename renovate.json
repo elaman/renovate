@@ -28,21 +28,12 @@
       ]
     }
   ],
-  "lockFileMaintenance": {
-    "enabled": true,
-    "commitMessageAction": "[Renovate] lock file updates",
-    "groupName": "lock",
-    "schedule": [
-      "after 5am and before 8am on thursday"
-    ],
-    "rangeStrategy": "update-lockfile",
-    "automerge": true
-  },
   "commitMessageAction": "[Renovate]",
   "rangeStrategy": "update-lockfile",
   "branchPrefix": "renovate",
   "additionalBranchPrefix": "-",
   "branchTopic": "updates",
+  "automerge": true,
   "automergeType": "pr",
   "ignoreTests": false,
   "ignorePaths": [
@@ -53,6 +44,14 @@
   ],
   "rebaseWhen": "behind-base-branch",
   "updateNotScheduled": false,
+  "lockFileMaintenance": {
+    "enabled": true,
+    "commitMessageAction": "[Renovate] lock file updates",
+    "groupName": "lock",
+    "schedule": [
+      "after 5am and before 8am on thursday"
+    ]
+  },
   "transitiveRemediation": true,
   "vulnerabilityAlerts": {
     "enabled": true
