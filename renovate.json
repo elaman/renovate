@@ -12,17 +12,19 @@
   "branchPrefix": "renovate-",
   "packageRules": [
     {
-      "groupName": "Weekly lock file maintenance.",
+      "groupName": "lock",
+      "commitMessageAction": "[Renovate] Weekly lock file maintenance",
       "matchUpdateTypes": ["lockFileMaintenance"],
       "schedule": ["at any time"]
     },
     {
-      "groupName": "Quarterly major updates.",
+      "groupName": "major",
+      "commitMessageAction": "[Renovate] Quarterly major version updates",
       "matchUpdateTypes": ["major"],
       "schedule": ["every 3 months on the first day of the month"]
     },
     {
-      "groupName": "Skipped minor and patch updates (in favor of lock file maintenance).",
+      "commitMessageAction": "[Renovate] Disabled minor version updates (in favor of lock file maintenance)",
       "matchUpdateTypes": ["minor", "patch"],
       "enabled": false
     }
