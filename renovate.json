@@ -2,11 +2,15 @@
   "$schema": "https://docs.renovatebot.com/renovate-schema.json",
   "extends": [
     "config:recommended",
-    ":disableRateLimiting",
-    ":maintainLockFilesWeekly",
-    ":dependencyDashboard"
+    ":maintainLockFilesWeekly"
   ],
-  "enabledManagers": ["composer"],
+  "includePaths": [
+    "drupal/composer.json",
+    "wordpress/composer.json"
+  ],
+  "lockFileMaintenance": {
+    "branchTopic": "renovate-lock"
+  },
   "packageRules": [
     {
       "matchUpdateTypes": ["minor", "patch"],
@@ -14,7 +18,9 @@
     },
     {
       "matchUpdateTypes": ["major"],
-      "schedule": ["every 3 months on the first day of the month"]
+      "branchTopic": "renovate-major-php",
+      "schedule": ["every 3 months on the first day of the month"],
+      "groupName": "major"
     }
   ]
 }
