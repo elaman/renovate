@@ -19,7 +19,8 @@
     },
     {
       "groupName": "major",
-      "commitMessageAction": "[Renovate] Quarterly major version updates",
+      "commitMessageAction": "[Renovate] Quarterly software updates",
+      "commitMessageTopic": "",
       "matchUpdateTypes": ["major"],
       "schedule": ["every 3 months on the first day of the month"]
     },
