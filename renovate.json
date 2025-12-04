@@ -2,8 +2,7 @@
   "$schema": "https://docs.renovatebot.com/renovate-schema.json",
   "extends": [
     "config:recommended",
-    ":maintainLockFilesWeekly",
-    ":prHourlyLimitNone"
+    ":maintainLockFilesWeekly"
   ],
   "includePaths": [
     "drupal/composer.@(json|lock)",
@@ -15,14 +14,14 @@
       "groupName": "lock",
       "commitMessageAction": "[Renovate] Weekly lock file maintenance",
       "matchUpdateTypes": ["lockFileMaintenance"],
-      "schedule": ["at any time"],
+      "schedule": ["after 5am and before 8am on thursday"],
       "automerge": true
     },
     {
       "groupName": "major",
       "commitMessageAction": "[Renovate] Quarterly major version updates",
       "matchUpdateTypes": ["major"],
-      "schedule": ["at any time"]
+      "schedule": ["every 3 months on the first day of the month"]
     },
     {
       "commitMessageAction": "[Renovate] Disabled minor version updates (in favor of lock file maintenance)",
