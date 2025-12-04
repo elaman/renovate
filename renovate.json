@@ -2,12 +2,14 @@
   "$schema": "https://docs.renovatebot.com/renovate-schema.json",
   "extends": [
     "config:recommended",
-    ":maintainLockFilesWeekly"
+    ":maintainLockFilesWeekly",
+    ":prHourlyLimitNone"
   ],
   "includePaths": [
     "drupal/composer.@(json|lock)",
     "wordpress/composer.@(json|lock)"
   ],
+  "branchPrefix": "renovate-",
   "packageRules": [
     {
       "groupName": "Weekly lock file maintenance.",
