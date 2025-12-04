@@ -8,20 +8,23 @@
     "drupal/composer.@(json|lock)",
     "wordpress/composer.@(json|lock)"
   ],
-  "lockFileMaintenance": {
-    "branchTopic": "renovate-lock",
-    "schedule": ["at any time"]
-  },
   "packageRules": [
     {
-      "matchUpdateTypes": ["minor", "patch"],
-      "enabled": false
+      "groupName": "Weekly lock file maintenance.",
+      "matchUpdateTypes": ["lockFileMaintenance"],
+      "schedule": ["at any time"],
+      "branchName": "renovate-lock"
     },
     {
+      "groupName": "Quarterly major updates.",
       "matchUpdateTypes": ["major"],
-      "branchTopic": "renovate-major-php",
       "schedule": ["every 3 months on the first day of the month"],
-      "groupName": "major"
+      "branchName": "renovate-major-php"
+    },
+    {
+      "groupName": "Skipped minor and patch updates (in favor of lock file maintenance).",
+      "matchUpdateTypes": ["minor", "patch"],
+      "enabled": false
     }
   ]
 }
