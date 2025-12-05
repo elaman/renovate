@@ -14,13 +14,13 @@
     {
       "groupName": "lock",
       "matchUpdateTypes": ["lockFileMaintenance"],
-      "schedule": ["any time"],
+      "schedule": ["at any time"],
       "automerge": true
     },
     {
       "groupName": "php",
       "matchUpdateTypes": ["major"],
-      "schedule": ["any time"]
+      "schedule": ["at any time"]
     },
     {
       "matchUpdateTypes": ["minor", "patch"],
