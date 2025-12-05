@@ -10,17 +10,20 @@
     "wordpress/composer.@(json|lock)"
   ],
   "branchPrefix": "renovate-",
+  "commitMessagePrefix": "[Renovate]",
   "packageRules": [
     {
-      "groupName": "lock",
-      "matchUpdateTypes": ["lockFileMaintenance"],
+      "commitMessageAction": "Weekly lock file maintanance",
       "schedule": ["at any time"],
+      "matchUpdateTypes": ["lockFileMaintenance"],
+      "groupName": "lock",
       "automerge": true
     },
     {
-      "groupName": "php",
-      "matchUpdateTypes": ["major"],
+      "commitMessageAction": "Quaterly major version updates",
       "schedule": ["at any time"]
+      "matchUpdateTypes": ["major"],
+      "groupName": "php",
     },
     {
       "matchUpdateTypes": ["minor", "patch"],
