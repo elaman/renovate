@@ -24,10 +24,6 @@
       "schedule": ["at any time"]
       "matchUpdateTypes": ["major"],
       "groupName": "php",
-    },
-    {
-      "matchUpdateTypes": ["minor", "patch"],
-      "enabled": false
     }
   ]
 }
