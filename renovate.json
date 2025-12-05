@@ -13,10 +13,10 @@
   "commitMessagePrefix": "[Renovate]",
   "packageRules": [
     {
-      "commitMessageAction": "Weekly lock file maintanance",
-      "schedule": ["at any time"],
-      "matchUpdateTypes": ["lockFileMaintenance"],
-      "groupName": "lock",
+      "description": "Group all minor, patch, and lock file maintenance into one weekly PR",
+      "matchUpdateTypes": ["minor", "patch", "lockFileMaintenance"],
+      "groupName": "Weekly Lock File Maintenance",
+      "schedule": ["before 4am on monday"],
       "automerge": true
     },
     {
@@ -24,11 +24,6 @@
       "schedule": ["at any time"],
       "matchUpdateTypes": ["major"],
       "groupName": "php"
-    },
-    {
-      "matchUpdateTypes": ["minor", "patch"],
-      "enabled": true,
-      "dependencyDashboardApproval": true
     }
   ]
 }
