@@ -9,21 +9,26 @@
     "drupal/composer.@(json|lock)",
     "wordpress/composer.@(json|lock)"
   ],
+  "rangeStrategy": "replace",
   "branchPrefix": "renovate-",
   "commitMessagePrefix": "[Renovate]",
   "packageRules": [
     {
-      "description": "Group all minor, patch, and lock file maintenance into one weekly PR",
-      "matchUpdateTypes": ["minor", "patch", "lockFileMaintenance"],
-      "groupName": "Weekly Lock File Maintenance",
-      "schedule": ["before 4am on monday"],
+      "commitMessageAction": "Weekly lock file maintenance",
+      "matchUpdateTypes": ["lockFileMaintenance"],
+      "groupName": "lock",
+      "schedule": ["at any time"],
       "automerge": true
     },
     {
-      "commitMessageAction": "Quaterly software updates updates",
+      "commitMessageAction": "Quaterly software updates",
       "schedule": ["at any time"],
       "matchUpdateTypes": ["major"],
       "groupName": "php"
+    },
+    {
+      "matchUpdateTypes": ["minor", "patch"],
+      "enabled": false
     }
   ]
 }
