@@ -27,7 +27,8 @@
     },
     {
       "matchUpdateTypes": ["minor", "patch"],
-      "enabled": false
+      "enabled": true,
+      "dependencyDashboardApproval": true
     }
   ]
 }
