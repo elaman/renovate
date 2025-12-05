@@ -9,9 +9,6 @@
     "drupal/composer.@(json|lock)",
     "wordpress/composer.@(json|lock)"
   ],
-  "env": {
-    "COMPOSER_MINIMAL_CHANGES": 0
-  },
   "rangeStrategy": "replace",
   "branchPrefix": "renovate-",
   "commitMessagePrefix": "[Renovate]",
