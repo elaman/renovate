@@ -11,7 +11,7 @@
   ],
   "env": {
     "COMPOSER_MINIMAL_CHANGES": 0
-  }
+  },
   "rangeStrategy": "replace",
   "branchPrefix": "renovate-",
   "commitMessagePrefix": "[Renovate]",
