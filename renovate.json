@@ -23,7 +23,7 @@
       "commitMessageAction": "Quaterly major version updates",
       "schedule": ["at any time"]
       "matchUpdateTypes": ["major"],
-      "groupName": "php",
+      "groupName": "php"
     }
   ]
 }
