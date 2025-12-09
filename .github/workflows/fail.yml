@@ -12,7 +12,7 @@ jobs:
       - name: Print a message
         run: echo "Starting the inevitable failure..."
 
-      - name: Fail on purpose
-        run: |
-          echo "This step is about to fail."
-          exit 1
+      # - name: Fail on purpose
+      #   run: |
+      #     echo "This step is about to fail."
+      #     exit 1
